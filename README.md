@@ -18,35 +18,7 @@ AI Code Reviewer is a full-stack web application that leverages **Google Gemini 
 ## 📁 Project Structure
 
 ```
-└── 📁AI-Powered-Code-Reviewer
-    └── 📁Backend
-        └── 📁src
-            └── 📁controllers
-                ├── ai.controller.js
-            └── 📁routes
-                ├── ai.routes.js
-            └── 📁services
-                ├── ai.service.js
-            ├── app.js
-        ├── .gitignore
-        ├── package-lock.json
-        ├── package.json
-        ├── server.js
-    └── 📁Frontend
-        └── 📁public
-            ├── logo.png
-        └── 📁src
-            └── 📁assets
-                ├── react.svg
-            ├── App.css
-            ├── App.jsx
-            ├── index.css
-            ├── main.jsx
-        ├── .gitignore
-        ├── eslint.config.js
-        ├── index.html
-        ├── package-lock.json
-        ├── package.json
-        ├── README.md
-        └── vite.config.js
+├── Backend/ # Express backend (API, AI integration)
+├── Frontend/ # React frontend (UI)
+├── .gitignore
 ```
