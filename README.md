@@ -20,5 +20,39 @@ AI Code Reviewer is a full-stack web application that leverages **Google Gemini 
 ```
 ├── Backend/ # Express backend (API, AI integration)
 ├── Frontend/ # React frontend (UI)
-├── .gitignore
 ```
+
+
+---
+
+## 🚀 Getting Started
+
+### 📦 Prerequisites
+
+- Node.js (v18+ recommended)
+- npm
+
+---
+
+### 📌 Backend Setup
+
+1. **Install dependencies:**
+   `
+   cd Backend
+   npm install
+  `
+2. **Configure environment variables:**
+Create a .env file in the Backend/ directory:
+
+`
+GEMINI_API_KEY=your_google_gemini_api_key
+`
+3. Start the server:
+`
+node server.js
+`
+4. API Endpoint:
+
+- `POST /ai/get-review`
+
+- `Request Body: { "code": "<your code here>" }`
