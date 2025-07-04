@@ -42,10 +42,10 @@ AI Code Reviewer is a full-stack web application that leverages **Google Gemini 
    npm install
    ```
 2. **Configure environment variables:**
-- Create a `.env` file in the `Backend/` directory:
-     ```
-     GEMINI_API_KEY=your_google_gemini_api_key
-     ```
+    - Create a `.env` file in the `Backend/` directory:
+      ```
+      GEMINI_API_KEY=your_google_gemini_api_key
+      ```
 
 3. **Start the server:**
    ```sh
@@ -53,8 +53,8 @@ AI Code Reviewer is a full-stack web application that leverages **Google Gemini 
    ```
 4. API Endpoint:
 
-- `POST /ai/get-review`
-- Request Body: `{ "code": "<your code here>" }`
+    - `POST /ai/get-review`
+    - Request Body: `{ "code": "<your code here>" }`
 
   ## Project Structure
 
@@ -64,3 +64,63 @@ AI Code Reviewer is a full-stack web application that leverages **Google Gemini 
 - `src/controllers/ai.controller.js` – Request handlers
 - `src/services/ai.service.js` – Gemini AI integration
 ---
+
+## 📌 Frontend Setup
+
+1. **Project Creation:**
+
+    - This React project was created using **Vite**.
+
+        ```bash
+        npm create vite@latest
+        ```
+
+2. **Install dependencies:**
+
+    ```bash
+    cd Frontend
+    npm install
+    ```
+3. **Start the development server:**
+    ```bash
+    npm run dev
+    ```
+4. **Open in Browser**
+
+    Visit [http://localhost:5173](http://localhost:5173) (default Vite port).
+
+
+
+---
+
+## 🔧 API Configuration
+
+The frontend expects the backend to run at `http://localhost:3000`
+
+Update the API URL in `src/App.jsx` if needed.
+
+---
+
+## 🛠️ Tech Stack
+
+### **Frontend:**
+- **React**
+- **Vite**
+- **PrismJS**
+- **react-simple-code-editor**
+- **react-markdown**
+- **axios**
+
+### **Backend:**
+- **Node.js**
+- **Express**
+- **@google/genai**
+- **dotenv**
+- **cors**
+
+---
+
+## 📄 License
+
+This project is open-source and available under the **MIT License**.
+
