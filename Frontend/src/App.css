@@ -1,0 +1,100 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+main .left,
+main .right {
+  height: 100%;
+  flex-basis: 50%;
+  border-radius: 0.7rem;
+}
+
+main .left {
+  background-color: black;
+  position: relative;
+}
+
+.left .code {
+  height: calc(100% - 4rem);
+  width: 100%;
+  overflow: auto;
+  border-radius: 0.7rem;
+  background-color: #080707;
+  padding: 0.5rem;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.left .code::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+main .left .review {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(219, 219, 255);
+  color: #000000;
+  padding: 0.5rem 2rem;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 0.7rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+main .left .review:hover {
+  box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+main .left .review:active {
+  transform: translateX(-50%) scale(0.95);
+  box-shadow: 0px 2px 6px rgba(255, 255, 255, 0.1);
+}
+
+main .right {
+  background-color: #343434;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  overflow: auto;
+}
+
+.right .intro-text {
+  color: #ddd;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  opacity: 0.8;
+  padding-top: 2rem;
+  animation: fadeIn 0.5s ease-in;
+}
+
+/* Optional fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 0.8;
+    transform: translateY(0);
+  }
+}
