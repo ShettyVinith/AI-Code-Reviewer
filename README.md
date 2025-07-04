@@ -56,7 +56,7 @@ AI Code Reviewer is a full-stack web application that leverages **Google Gemini 
     - `POST /ai/get-review`
     - Request Body: `{ "code": "<your code here>" }`
 
-  ## Project Structure
+  ## Backend Project Structure
 
 - `server.js` – Entry point
 - `src/app.js` – Express app setup
