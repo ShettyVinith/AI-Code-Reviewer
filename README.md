@@ -42,7 +42,7 @@ AI Code Reviewer is a full-stack web application that leverages **Google Gemini 
    npm install
    ```
 2. **Configure environment variables:**
-   - Create a `.env` file in the `Backend/` directory:
+- Create a `.env` file in the `Backend/` directory:
      ```
      GEMINI_API_KEY=your_google_gemini_api_key
      ```
