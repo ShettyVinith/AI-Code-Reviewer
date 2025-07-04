@@ -42,10 +42,10 @@ AI Code Reviewer is a full-stack web application that leverages **Google Gemini 
    npm install
    ```
 2. **Configure environment variables:**
-    - Create a `.env` file in the `Backend/` directory:
-      ```
-      GEMINI_API_KEY=your_google_gemini_api_key
-      ```
+   - Create a `.env` file in the `Backend/` directory:
+     ```
+     GEMINI_API_KEY=your_google_gemini_api_key
+     ```
 
 3. **Start the server:**
    ```sh
@@ -56,13 +56,13 @@ AI Code Reviewer is a full-stack web application that leverages **Google Gemini 
     - `POST /ai/get-review`
     - Request Body: `{ "code": "<your code here>" }`
 
-  ## Backend Project Structure
+5. Backend Project Structure
 
-- `server.js` – Entry point
-- `src/app.js` – Express app setup
-- `src/routes/ai.routes.js` – API routes
-- `src/controllers/ai.controller.js` – Request handlers
-- `src/services/ai.service.js` – Gemini AI integration
+    - `server.js` – Entry point
+    - `src/app.js` – Express app setup
+    - `src/routes/ai.routes.js` – API routes
+    - `src/controllers/ai.controller.js` – Request handlers
+    - `src/services/ai.service.js` – Gemini AI integration
 ---
 
 ## 📌 Frontend Setup
@@ -95,9 +95,9 @@ AI Code Reviewer is a full-stack web application that leverages **Google Gemini 
 
 ## 🔧 API Configuration
 
-The frontend expects the backend to run at `http://localhost:3000`
+- The frontend expects the backend to run at `http://localhost:3000`
 
-Update the API URL in `src/App.jsx` if needed.
+- Update the API URL in `src/App.jsx` if needed.
 
 ---
 
