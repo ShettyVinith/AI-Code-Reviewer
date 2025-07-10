@@ -21,9 +21,12 @@ function sum() {
   }, []);
 
   async function reviewCode() {
-    const response = await axios.post("http://localhost:3000/ai/get-review", {
-      code,
-    });
+    const response = await axios.post(
+      "https://ai-code-reviewer-8ivt.onrender.com",
+      {
+        code,
+      }
+    );
 
     setReview(response.data);
     setShowIntro(false); // 👈 hide intro after review
